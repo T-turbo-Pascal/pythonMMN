@@ -1,4 +1,23 @@
+# def logo():
+#     print(
+#         """
 
+#   ▄▄▄█████▓ █    ██  ██▀███   ▄▄▄▄    ▒█████   ██▓███   ▄▄▄        ██████  ▄████▄   ▄▄▄       ██▓    
+#   ▓  ██▒ ▓▒ ██  ▓██▒▓██ ▒ ██▒▓█████▄ ▒██▒  ██▒▓██░  ██▒▒████▄    ▒██    ▒ ▒██▀ ▀█  ▒████▄    ▓██▒    
+#   ▒ ▓██░ ▒░▓██  ▒██░▓██ ░▄█ ▒▒██▒ ▄██▒██░  ██▒▓██░ ██▓▒▒██  ▀█▄  ░ ▓██▄   ▒▓█    ▄ ▒██  ▀█▄  ▒██░    
+#   ░ ▓██▓ ░ ▓▓█  ░██░▒██▀▀█▄  ▒██░█▀  ▒██   ██░▒██▄█▓▒ ▒░██▄▄▄▄██   ▒   ██▒▒▓▓▄ ▄██▒░██▄▄▄▄██ ▒██░    
+#     ▒██▒ ░ ▒▒█████▓ ░██▓ ▒██▒░▓█  ▀█▓░ ████▓▒░▒██▒ ░  ░ ▓█   ▓██▒▒██████▒▒▒ ▓███▀ ░ ▓█   ▓██▒░██████▒
+#     ▒ ░░   ░▒▓▒ ▒ ▒ ░ ▒▓ ░▒▓░░▒▓███▀▒░ ▒░▒░▒░ ▒▓▒░ ░  ░ ▒▒   ▓▒█░▒ ▒▓▒ ▒ ░░ ░▒ ▒  ░ ▒▒   ▓▒█░░ ▒░▓  ░
+#       ░    ░░▒░ ░ ░   ░▒ ░ ▒░▒░▒   ░   ░ ▒ ▒░ ░▒ ░       ▒   ▒▒ ░░ ░▒  ░ ░  ░  ▒     ▒   ▒▒ ░░ ░ ▒  ░
+#     ░       ░░░ ░ ░   ░░   ░  ░    ░ ░ ░ ░ ▒  ░░         ░   ▒   ░  ░  ░  ░          ░   ▒     ░ ░   
+#               ░        ░      ░          ░ ░                 ░  ░      ░  ░ ░            ░  ░    ░  ░
+#                                    ░                                      ░                          
+
+                                                                          
+#                                                                           """
+#     )
+
+# logo()
 # a = str(input('Zadaj meno: '))
 # print(f'Pozdravujem Ťa {a}')
 
@@ -7,22 +26,20 @@
 # print('Obdĺžnik so stranami 10 a 20 má obsah', 10*20, 'a jeho obvod je 2 * (10 + 20) =', 2 * (10 + 20))
 
 
-# print(f'*' * 21)
-# print(f'*' + ' ' * 19 + '*')
-# print(f'*' + 'Uladzislau Novikau' +' ' * 1 + '*')
-# print(f'*' + ' ' * 19 + '*')
-# print(f'*' * 21)
+# print(f'*' * 22)
+# print(f'*' + ' ' * 20 + '*')
+# print(f'*' + ' Uladzislau Novikau '+ '*')
+# print(f'*' + ' ' * 20 + '*')
+# print(f'*' * 22)
 
 # print('(1 + 2) × (3 + 4) = ', (1 + 2) * (3 + 4))
-
-
 # print('1 + 2')
 # print('--- =', round((1+2)/(3+4), 2))
 # print('3 + 4')
 
 
 # print('súčet čísel 5 a 6 =', 5+6)
-# print('súčet čísel od 1 po 10 =', 1+2+3+4+5+6+7+8+9+10)
+# print('súčet čísel od 1 po 10 =', sum(range(1, 11)))
 # print('súčin zo súčtu a rozdielu čísel 3 a 4 = ', (3+4)*(3-4))
 
 
@@ -79,23 +96,24 @@
 # canvas.create_text(50, 250, fill = 'red', font = ('Arial', 20), text = f'4')
 # canvas.mainloop()
 
+# import tkinter as tk
 
-# import tkinter
+# def create_text_with_shadow(canvas, x, y, text, font, text_color, shadow_color, shadow_offset):
+#     canvas.create_text(x + shadow_offset, y + shadow_offset, text=text, font=font, fill=shadow_color)
+#     canvas.create_text(x, y, text=text, font=font, fill=text_color)
 
-# canvas = tkinter.Canvas(width=500, height=300)
+# root = tk.Tk()
+# root.title("Текст с тенью")
+
+# canvas = tk.Canvas(root, width=400, height=200)
 # canvas.pack()
 
-# text_x = 250
-# text_y = 150
-# text_color = 'black'
-# shadow_color = 'gray'
-# font = ('Times New Roman', 24)
-# text = 'Text s tieňom'
+# text = "Text s tieňom"
+# font = ("Helvetica", 24)
+# text_color = "black"
+# shadow_color = "gray"
+# shadow_offset = 4
 
-# shadow_offset = 5
-# canvas.create_text(text_x + shadow_offset, text_y +
-#                    shadow_offset, fill=shadow_color, font=font, text=text)
-# canvas.create_text(text_x, text_y, fill=text_color, font=font, text=text)
+# create_text_with_shadow(canvas, 100, 100, text, font, text_color, shadow_color, shadow_offset)
 
-
-# canvas.mainloop()
+# root.mainloop()
