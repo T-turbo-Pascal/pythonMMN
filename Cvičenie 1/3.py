@@ -17,7 +17,6 @@
 #                                                                           """
 #     )
 
-# logo()
 # a = str(input('Zadaj meno: '))
 # print(f'Pozdravujem Ťa {a}')
 
