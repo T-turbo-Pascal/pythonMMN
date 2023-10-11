@@ -190,33 +190,33 @@ def logo():
 
 #  13
 
-import tkinter
-
-canvas = tkinter.Canvas(width=400, height=200)
-canvas.pack()
-
-stripe_height = canvas.winfo_reqheight() / 13
-stripe_color = '#b22234'
-
-for i in range(13):
-    y1 = i * stripe_height
-    y2 = (i + 1) * stripe_height
-    canvas.create_rectangle(0, y1, canvas.winfo_reqwidth(), y2, fill=stripe_color, outline=stripe_color)
-    if stripe_color == '#b22234':
-        stripe_color = '#ffffff'
-    else:
-        stripe_color = '#b22234'
-
-blue_width = canvas.winfo_reqwidth() * 2 / 5
-blue_height = stripe_height * 7
-canvas.create_rectangle(0, 0, blue_width, blue_height, fill='#3c3b6e', outline='#3c3b6e')
-
-star_size = blue_height / 10
-for row in range(9):
-    for col in range(11):
-        if (row + col) % 2 == 0:
-            x = col * (blue_width / 11) + 7
-            y = row * (blue_height / 9) + 3
-            canvas.create_text(x, y, text='*', font=("Arial", 20), fill='#ffffff')
-
-canvas.mainloop()
+# import tkinter
+#
+# canvas = tkinter.Canvas(width=400, height=200)
+# canvas.pack()
+#
+# stripe_height = canvas.winfo_reqheight() / 13
+# stripe_color = '#b22234'
+#
+# for i in range(13):
+#     y1 = i * stripe_height
+#     y2 = (i + 1) * stripe_height
+#     canvas.create_rectangle(0, y1, canvas.winfo_reqwidth(), y2, fill=stripe_color, outline=stripe_color)
+#     if stripe_color == '#b22234':
+#         stripe_color = '#ffffff'
+#     else:
+#         stripe_color = '#b22234'
+#
+# blue_width = canvas.winfo_reqwidth() * 2 / 5
+# blue_height = stripe_height * 7
+# canvas.create_rectangle(0, 0, blue_width, blue_height, fill='#3c3b6e', outline='#3c3b6e')
+#
+# star_size = blue_height / 10
+# for row in range(9):
+#     for col in range(11):
+#         if (row + col) % 2 == 0:
+#             x = col * (blue_width / 11) + 7
+#             y = row * (blue_height / 9) + 3
+#             canvas.create_text(x, y, text='*', font=("Arial", 20), fill='#ffffff')
+#
+# canvas.mainloop()
