@@ -10,6 +10,6 @@ def vypis(x, y, cislo):
 
 for i in range(1, 11):
     vypis(100, 100 + 20 * i, i)
-    vypis(200, 100 + 20 * i, i * i)
+    vypis(120, 100 + 20 * i, i * i)
 
 canvas.mainloop()
