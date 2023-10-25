@@ -17,7 +17,7 @@ def logo():
                                                                           """
     )
 
-# 1
+# 1 
 # a = int(input("Zadaj celé číslo: "))
 # if a > 0:
 #     print(f"{a} je kladné číslo")
@@ -150,7 +150,7 @@ def logo():
 # print(f"Počítač zvolil {computer_input}")
 #
 # if user_input == computer_input:
-#     print("Remíza")
+#     print("Remiza")
 # elif user_input == "k" and computer_input == "p":
 #     print("Vyhral som")
 # elif user_input == "k" and computer_input == "n":
@@ -166,4 +166,6 @@ def logo():
 # else:
 #     print("Zadal si zlé písmenko")
 
+# 10
+# Bez použitia počítača zistite, čo program vypíše: 52
 
