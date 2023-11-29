@@ -9,7 +9,7 @@ git clone https://github.com/T-turbo-Pascal/pythonMMN
 ## Usage
 
 ```bash
-python 1.py
+python name-file.py
 ```
 
 ## License
